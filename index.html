@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Домашня випічка</title>
+  <title>Домашня випічка на замовлення • ТОРТИ, КЕКСИ, ПЕЧИВО</title>
   <link rel="stylesheet" href="style.css" />
-  <meta name="description" content="Смачні домашні торти, кекси та тістечка на замовлення." />
-  <meta name="keywords" content="домашня випічка, торти, десерти, кекси" />
+  <meta name="description" content="Натуральні торти, кекси та печиво з доставкою по Львову. Замовляй домашню випічку прямо зараз!" />
+  <meta name="keywords" content="домашня випічка, торти, тістечка, замовити випічку, десерти" />
+  <!-- Якщо використовуєш GitHub Pages без Jekyll, додай пустий файл .nojekyll -->
 </head>
 <body>
   <header>
@@ -26,13 +27,13 @@
     <section id="home" class="content-section active">
       <h2>Головна</h2>
       <p>Ласкаво просимо на наш сайт! Тут ви знайдете найсмачнішу домашню випічку, приготовану з любов'ю. Ми пропонуємо торти, кекси, тістечка для будь-якого свята або просто для душі.</p>
-      <img src="images/cake-main.jpg" alt="Домашній торт з кремом та ягодами" />
+      <img src="images/cake-main.jpg" alt="Домашній торт з кремом та ягодами" loading="lazy" />
     </section>
 
     <section id="about" class="content-section">
       <h2>Про нас</h2>
-      <p>Ми — Марія та Оксана, пекарі з душею. Ми створюємо десерти вдома, без хімії, на замовлення. Кожен виріб — ручна робота з турботою про смак і красу.</p>
-      <img src="images/baker.jpg" alt="Пекарка готує тісто вдома" />
+      <p>Ми — Марія та Оксана, пекарі з душею. Створюємо десерти вдома, без хімії, на замовлення. Кожен виріб — це ручна робота з турботою про смак і красу.</p>
+      <img src="images/baker.jpg" alt="Пекарка готує тісто вдома" loading="lazy" />
     </section>
 
     <section id="menu" class="content-section">
@@ -43,7 +44,7 @@
         <li>🍪 Печиво з шоколадом — 120 грн/0.5 кг</li>
         <li>🎂 Індивідуальні замовлення — обговорюються</li>
       </ul>
-      <img src="images/birthday-cake.jpg" alt="Святковий торт для особливих подій" />
+      <img src="images/birthday-cake.jpg" alt="Святковий торт для особливих подій" loading="lazy" />
     </section>
 
     <section id="contacts" class="content-section">
@@ -54,7 +55,7 @@
         <li>📧 Email: vypichka@example.com</li>
         <li>📍 м. Львів, вул. Смачна 12</li>
       </ul>
-      <img src="images/cookies.jpg" alt="Смачне домашнє печиво" />
+      <img src="images/cookies.jpg" alt="Смачне домашнє печиво на тарілці" loading="lazy" />
     </section>
   </main>
 
@@ -64,12 +65,11 @@
 
   <script>
     function showSection(id) {
-      const sections = document.querySelectorAll('.content-section');
-      sections.forEach(section => {
-        section.classList.remove('active');
-      });
+      document.querySelectorAll('.content-section')
+        .forEach(sec => sec.classList.remove('active'));
       document.getElementById(id).classList.add('active');
     }
   </script>
 </body>
 </html>
+
